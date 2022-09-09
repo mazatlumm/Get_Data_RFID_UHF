@@ -1,0 +1,1 @@
+[{"id":"b64396b3.67f5a8","type":"function","z":"678b8c15.2e2634","name":"QUERY","func":"tagreader = msg.payload.tag\ndevice = msg.payload.Device_ID\nmsg.topic = \"INSERT INTO rfid_uhf (`id`,`device_id`,`tag`) VALUES ('',\"+device+\",\"+tagreader+\")\";\nreturn msg;","outputs":1,"noerr":0,"x":420,"y":300,"wires":[["c18dbf7f.ffaf3"]]}]
