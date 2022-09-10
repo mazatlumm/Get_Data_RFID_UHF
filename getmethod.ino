@@ -1,4 +1,5 @@
-void input_data(){
+void getmethod(){
+  if ((WiFi.status() == WL_CONNECTED)) { 
     HTTPClient http;
     String urlgo = "http://localhost/smart-warehouse/my_api/main.php?device_id=RFID001&kode_scan=";
     urlgo += RFIDTAG;
@@ -23,4 +24,5 @@ void input_data(){
       Serial.println("Error on HTTP request");
     }
     http.end(); 
+  }
 }
