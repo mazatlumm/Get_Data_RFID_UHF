@@ -1,7 +1,7 @@
 void status_get(){
   //URL Response=================================================================================
     HTTPClient http;
-    String urlgo3 = "http://alicestech.com/alicestech.com/warehouse/api/Api/response?rfid=";
+    String urlgo3 = "http://localhost/smart-warehouse/my_api/main.php?device_id=RFID001&kode_scan=";
     urlgo3 += RFIDTAG;
     urlgo3.remove(69,1);
     urlgo3.remove(89,2);

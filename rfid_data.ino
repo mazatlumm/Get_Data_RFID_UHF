@@ -12,7 +12,7 @@ void rfidData()
       
       rfidtag = "{\"Device_ID\":\"34532\",\"tag\":\"'";
       rfidtag += RFIDTAG;
-      rfidtag += "'\",\"tahun\":2020}";
+      rfidtag += "'\",\"tahun\":2022}";
       rfidtag.remove(29,1);
       rfidtag.remove(50,1);
       rfidtag.remove(49,1);

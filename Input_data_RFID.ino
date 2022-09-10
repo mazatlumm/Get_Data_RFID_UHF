@@ -1,6 +1,6 @@
 void input_data(){
     HTTPClient http;
-    String urlgo = "http://alicestech.com/alicestech.com/warehouse/api/Api/data?code=RFID007&barang=";
+    String urlgo = "http://localhost/smart-warehouse/my_api/main.php?device_id=RFID001&kode_scan=";
     urlgo += RFIDTAG;
     urlgo.remove(80,1);
     urlgo.remove(100,3);

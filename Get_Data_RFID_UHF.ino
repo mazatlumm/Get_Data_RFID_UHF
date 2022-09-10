@@ -25,7 +25,7 @@ String dt1[10];
 void setup() 
 {
     Serial.begin(115200);
-    Serial2.begin(115200);
+    Serial2.begin(115200, SERIAL_8N1);
     pinMode(alert, OUTPUT);
     digitalWrite(alert, LOW);
     Serial.print("Connecting to ");
